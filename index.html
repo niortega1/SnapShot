@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SnapShot</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!--    Navbar    -->
+    <nav class="navbar">
+        <div class="brand-title-header">SnapShot.&copy;</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#signup">Sign up</a></li>
+                <li id="login"><a href="#login">Log in</a></li>
+                <img src="./Resources/dark theme icon/moon.png" id="icon">
+
+            </ul>
+        </div>
+    </nav>
+
+    <!----     Search Section    ----->
+    <section class="searchsection">
+        <div class="search-container" id="explore">
+            <div class="searchbanner">
+                <h1>SnapShot.</h1>
+                <div class="searchbar">
+                    <p id="top-search">Bringing the world to you.</p>
+                    <p id="bottom-search">Discover trends and unique photos.</p>
+                    <div>
+                        <form>
+                            <div class="searchbox">
+                                <label for="picsearch"></label>
+                                <input id="picsearch" type="search" name="picsearch" placeholder="Start Exploring...">
+                            </div>
+                            <div class="search-button">
+                                <button class="searchicon">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----    Categories Section   ----->
+    <section class="categoriessection" href="#categories">
+        <h2 id="categories">Categories</h2>
+        <div class="cases-container">
+            <div class="cases">        
+                <div class="case" id="background">
+                    <div class="description">
+                        <h2>Backgrounds</h2>
+                    </div>
+                </div>
+                <div class="case" id="nature">
+                    <div class="description">
+                        <h2>Nature</h2>
+                    </div>
+                </div>
+                <div class="case" id="city">
+                    <div class="description">
+                        <h2>City Skylines</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cases">
+                <div class="case" id="animal">
+                    <div class="description">
+                        <h2>Animals</h2>
+                    </div>
+                </div>
+                <div class="case" id="people">
+                    <div class="description">
+                        <h2>People</h2>
+                    </div>
+                </div>
+                <div class="case" id="interior">
+                    <div class="description">
+                        <h2>Interiors</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!----      Teammates Section       ---->
+    <section class="teamsection">
+        <h2 id="team">Our Team</h2>
+        <div class="teammates">
+            <div class="teammate" id="pbrown">
+                <div class="description">
+                    <h2>Pierre J. Brown</h2>
+                </div>
+            </div>
+            <div class="teammate" id="dmorrow">
+                <div class="description">
+                    <h2>Dolores L. Morrow</h2>
+                </div>
+            </div>
+            <div class="teammate" id="jwhitehead">
+                <div class="description">
+                    <h2>Jerry N. Whitehead</h2>
+                </div>
+            </div>
+            <div class="teammate" id="kcoburn">
+                <div class="description">
+                    <h2>Kimberly D. Coburn</h2>
+                </div>
+            </div>
+            <div class="teammate" id="jblauser">
+                <div class="description">
+                    <h2>Judy M. Blauser</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const icon = document.getElementById("icon");
+
+        icon.addEventListener("click", () => {
+            document.body.classList.toggle ("dark-theme");
+
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src="./Resources/dark theme icon/sun.png";
+            } else {
+                icon.src="./Resources/dark theme icon/moon.png";
+            }
+        })
+    </script>
+</body>
+
+<!----      Footer      ---->
+<footer class="footer-info">
+    <div class="brand-title-footer">SnapShot.&copy;</div>
+    <div class="footer-right">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/home"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/"><i class="fa fa-github"></i></a>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#categories">Categories</a>
+            <a href="#team">Team</a>
+            <a href="#team">About</a>
+            <a href="#team">Contact</a>
+        </p>
+        <p>SnapShot.&copy; 2022</p>
+    </div>
+</footer>
+
+</html>
