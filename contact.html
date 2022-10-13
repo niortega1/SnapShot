@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!--    Navbar    -->
+    <nav class="navbar">
+        <div class="brand-title-header"><a href="index.html">SnapShot.&copy;</a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#signup">Sign up</a></li>
+                <li id="login"><a href="#login">Log in</a></li>
+                <img src="./Resources/dark theme icon/moon.png" id="icon">
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Meet the Team Section -->
+    <section class="team-section">
+        <h2 class="section-header">Meet Our Team</h2>
+
+        <div class="team-case">
+            <div class="teammates">
+                <div class="team-container">
+                    <div class="img-div">
+                        <img src="./Resources/pbrown_img.avif">
+                    </div>
+                    <div class="description">
+                        <h3>Pierre J. Brown</h3>
+                        <h2>Staff Engineer</h2>
+                        <p>Pierre has worked in the technology and association sector for 7 years and is currently the staff engineer of the membership management software company SnapShot. He resides in San Francisco, CA with his wife Nancy and their three children.</p>
+                    </div>
+                </div>
+                <div class="team-container">
+                    <div class="img-div">
+                        <img src="./Resources/dmorrow_img.avif">
+                    </div>
+                    <div class="description">
+                        <h3>Dolores L. Morrow</h3>
+                        <h2>Senior Software Engineer</h2>
+                        <p>Dolores is the senior software engineer on this team, and has worked in this industry for 5 years. She resides in the San Francisco area with her family. Dolores enjoys going out and exploring new restaurants and spending time with her family.</p>
+                    </div>
+                </div>
+                <div class="team-container">
+                    <div class="img-div">
+                        <img src="./Resources/jwhitehead_img.avif">
+                    </div>
+                    <div class="description">
+                        <h3>Jerry N. Whitehead</h3>
+                        <h2>Senior Software Engineer</h2>
+                        <p>Jerry has worked in Software Development for over 3 years, and is currently the senior software engineer of SnapShot. He lives in San Francisco with his wife and two sons. Pierre also enjoys riding his motorcycle through the city on his free time.</p>
+                    </div>
+                </div>
+                <div class="team-container">
+                    <div class="img-div">
+                        <img id="img-kcoburn" src="./Resources/kcoburn_img.avif">
+                    </div>
+                    <div class="description">
+                        <h3>Kimberly D. Coburn</h3>
+                        <h2>Software Engineer</h2>
+                        <p>Kim has worked in the technology sector for 3 years as a software engineer. She is new to the San Francisco Bay area. Kim enjoys exploring the Bay area with her two dogs, Rocko and Zues.</p>
+                    </div>
+                </div>
+                <div class="team-container">
+                    <div class="img-div">
+                        <img id="img-jblauser" src="./Resources/jblauser_img.avif">
+                    </div>
+                    <div class="description">
+                        <h3>Judy M. Blauser</h3>
+                        <h2>Software Engineer</h2>
+                        <p>Jidy has been in the technology industy for 2 years and works as a software engineer at SnapShot. She resides in San Francisco with her partner. She enjoys traveling, cruising around town with her beloved ginger husky Charlie. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const icon = document.getElementById("icon");
+
+        icon.addEventListener("click", () => {
+            document.body.classList.toggle ("dark-theme");
+
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src="./Resources/dark theme icon/sun.png";
+            } else {
+                icon.src="./Resources/dark theme icon/moon.png";
+            }
+        })
+    </script>
+
+<body>
+
+<!----      Footer      ---->
+<footer class="footer-info">
+    <div class="brand-title-footer">SnapShot.&copy;</div>
+    <div class="footer-right">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/home"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/"><i class="fa fa-github"></i></a>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#categories">Categories</a>
+            <a href="#team">Team</a>
+            <a href="#team">About</a>
+            <a href="#team">Contact</a>
+        </p>
+        <p>SnapShot.&copy; 2022</p>
+    </div>
+</footer>
+
+</html>
