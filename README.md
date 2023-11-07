@@ -1,16 +1,17 @@
-Portfolio Website Project 
+# SnapShot
 
+## Description
+SnapShot is a static website concept designed to act as a landing page for a photo/image sharing platform. This project aims to showcase design skills and the thought process behind creating a user-friendly interface for a service that offers free image downloads.
 
-README
+## Features
+- **Landing Page**: A clean and intuitive landing page with navigation that directs users to various sections of the site.
+- **Image Gallery**: A gallery showcasing a variety of images that users can hypothetically download.
+- **Responsive Design**: Fully responsive web design ensuring a seamless experience across different devices and screen sizes.
 
-SnapShot Photography is a photogenic website to bring everyday photos available to the world for free.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (for basic interactivity)
 
-
-AUTHOR 
-
-Nicolas Ortega - Credits to building website functionality.
-
-
-THANKS/ACKNOWLEDGMENTS
-
-Special thanks to Codecademy and past lessons/modules.
+## Setup
+To view SnapShot, simply clone
